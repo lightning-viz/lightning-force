@@ -15,8 +15,8 @@ var styles = fs.readFileSync(__dirname + '/styles/styles.css');
 var Visualization = LightningVisualization.extend({
 
     defaultSize: 8,
-    defaultFill: '#deebfa',
-    defaultStroke: '#68a1e5',
+    defaultFill: '#68a1e5',
+    defaultStroke: '#white',
 
     init: function() {
         this.margin = {top: 20, right: 20, bottom: 20, left: 45};
