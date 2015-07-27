@@ -1,6 +1,6 @@
 {
   "name": "lightning-force",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "dependencies": {
     "brfs": "^1.4.0",
     "d3": "^3.5.5",
@@ -14,6 +14,10 @@
   ],
   "engines": {
     "node": ">=0.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lightning-viz/lightning-force.git"
   },
   "browserify": {
     "transform": [
