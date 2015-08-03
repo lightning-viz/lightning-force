@@ -4,8 +4,6 @@ var Graph = require('lightning-graph')
 var _ = require('lodash');
 var utils = require('lightning-client-utils');
 
-var LightningVisualization = require('lightning-visualization');
-
 /*
  * Extend the base visualization object
  */
