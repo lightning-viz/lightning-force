@@ -2,11 +2,9 @@
   "name": "lightning-force",
   "version": "0.0.5",
   "dependencies": {
-    "brfs": "^1.4.0",
     "d3": "^3.5.5",
-    "d3-multiaxis-zoom": "^1.0.4",
-    "lightning-client-utils": "^0.6.3",
-    "lightning-visualization": "^0.0.6",
+    "lightning-client-utils": "^0.6.4",
+    "lightning-graph": "^0.0.13",
     "lodash": "^3.8.0"
   },
   "keywords": [
@@ -18,11 +16,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lightning-viz/lightning-force.git"
-  },
-  "browserify": {
-    "transform": [
-      "brfs"
-    ]
   },
   "lightning": {
     "name": "force"
