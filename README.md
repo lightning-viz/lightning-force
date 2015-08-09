@@ -1,4 +1,4 @@
-# Lightning FOrce
+# Lightning Force
 
 Force plot for **Lightning**
 
