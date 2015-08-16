@@ -34,6 +34,7 @@ var Visualization = Graph.extend({
             d.c = c ? c : styles.color
             d.s = s ? s : styles.size
             d.k = c ? c.darker(0.75) : styles.stroke
+            d.l = (data.labels || []).length > i ? data.labels[i] : null;
             return d;
         });
 
