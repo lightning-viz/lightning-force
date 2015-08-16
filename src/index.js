@@ -4,9 +4,7 @@ var Graph = require('lightning-graph')
 var _ = require('lodash');
 var utils = require('lightning-client-utils');
 
-/*
- * Extend the base visualization object
- */
+
 var Visualization = Graph.extend({
 
     getDefaultStyles: function() {
@@ -34,6 +32,7 @@ var Visualization = Graph.extend({
             d.c = c ? c : styles.color
             d.s = s ? s : styles.size
             d.k = c ? c.darker(0.75) : styles.stroke
+            d.l = (data.labels || []).length > i ? data.labels[i] : null;
             return d;
         });
 
