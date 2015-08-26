@@ -1,6 +1,6 @@
 {
   "name": "lightning-force",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "dependencies": {
     "d3": "^3.5.5",
     "lightning-client-utils": "^0.7.0",
