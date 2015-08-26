@@ -97,7 +97,9 @@ var Visualization = Graph.extend({
         yDomain[0] -= yRng * 0.025
         yDomain[1] += yRng * 0.025
 
-        this.x.domain([xDomain[0], xDomain[1] + (self.width - self.height)])
+        var adjust = (xRng * (this.height/this.width)) / 2
+        
+        this.x.domain([xDomain[0] - adjust, xDomain[1] + adjust])
         this.y.domain(yDomain)
 
         this.x.range([0, this.width])
