@@ -44,7 +44,7 @@ var Visualization = Graph.extend({
         });
 
         var force = d3.layout.force()
-            .size([this.width, this.height])
+            .size([this.height, this.height])
             .charge(-120)
             .linkDistance(30)    
             .nodes(data.nodes)
@@ -68,7 +68,7 @@ var Visualization = Graph.extend({
     },
 
     setScales: function() {
-        this.x.range([0, this.height])
+        this.x.range([0, this.width]).domain([0, this.height])
         this.y.range([this.height, 0])
     },
 
