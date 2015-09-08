@@ -3,7 +3,7 @@
   "version": "0.0.13",
   "dependencies": {
     "d3": "^3.5.5",
-    "lightning-client-utils": "^0.7.0",
+    "lightning-client-utils": "^0.7.5",
     "lightning-graph": "^0.1.1",
     "lodash": "^3.8.0"
   },
