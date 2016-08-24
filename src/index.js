@@ -46,15 +46,20 @@ var Visualization = Graph.extend({
         var force = d3.layout.force()
             .size([this.height, this.height])
             .charge(-120)
-            .linkDistance(30)    
+            .linkDistance(30)
             .nodes(data.nodes)
             .links(data.links)
 
         force.start();
         for (var i = data.nodes.length * data.nodes.length; i > 0; --i) {
             force.tick();
-        } 
+        }
         force.stop();
+
+        utils.updateSettings(this, { nodes: data.nodes.map(function (node) { return {
+          x: node.x,
+          y: node.y
+        }}) });
 
         return data;
     },
@@ -98,7 +103,7 @@ var Visualization = Graph.extend({
         yDomain[1] += yRng * 0.025
 
         var adjust = (xRng * (this.height/this.width)) / 2
-        
+
         this.x.domain([xDomain[0] - adjust, xDomain[1] + adjust])
         this.y.domain(yDomain)
 
