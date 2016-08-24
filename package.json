@@ -1,6 +1,9 @@
 {
   "name": "lightning-force",
   "version": "0.0.14",
+  "scripts": {
+    "example": "budo example/index.js"
+  },
   "dependencies": {
     "d3": "^3.5.5",
     "lightning-client-utils": "^0.7.5",
